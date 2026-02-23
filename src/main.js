@@ -4,10 +4,9 @@ import App from '@/App.vue'
 import router from '@/router'
 import vuetify from './plugins/vuetify'
 
-// Replace this problematic line:
-// import 'vuetify/styles'
-// With this:
-import 'vuetify/dist/vuetify.css'
+// ✅ FIX: Use 'vuetify/styles' for Vuetify 3
+// Do NOT use 'vuetify/dist/vuetify.css'
+import 'vuetify/styles' 
 
 import '@/styles/index.css'
 import '@/styles/app.css'
