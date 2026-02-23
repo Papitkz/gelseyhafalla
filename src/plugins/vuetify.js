@@ -1,6 +1,5 @@
 // src/plugins/vuetify.js
-import 'vuetify/styles'
-import '@mdi/font/css/materialdesignicons.css'
+// Remove: import 'vuetify/styles'  - handled in main.js now
 
 import { createVuetify } from 'vuetify'
 import * as components from 'vuetify/components'

@@ -2,8 +2,13 @@ import { createApp } from 'vue'
 import { createPinia } from 'pinia'
 import App from '@/App.vue'
 import router from '@/router'
-import vuetify from './plugins/vuetify'  // Move vuetify import UP
-import 'vuetify/styles'  // ADD THIS - before vuetify plugin use
+import vuetify from './plugins/vuetify'
+
+// Replace this problematic line:
+// import 'vuetify/styles'
+// With this:
+import 'vuetify/dist/vuetify.css'
+
 import '@/styles/index.css'
 import '@/styles/app.css'
 import './assets/main.css'
@@ -14,7 +19,7 @@ const pinia = createPinia()
 pinia.use(piniaPluginPersistedState)
 
 createApp(App)
-  .use(pinia)  // Use pinia instance, not createPinia()
+  .use(pinia)
   .use(router)
   .use(vuetify)
   .mount('#app')
