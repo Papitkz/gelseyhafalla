@@ -1435,6 +1435,11 @@ vue-router@^4.3.0:
     "@vue/server-renderer" "3.5.21"
     "@vue/shared" "3.5.21"
 
+vuetify@^3.12.0:
+  version "3.12.0"
+  resolved "https://registry.npmmirror.com/vuetify/-/vuetify-3.12.0.tgz"
+  integrity sha512-N1y3sxLAyrblBHJ6vFTQoTM9icwZd/jNUsmYVQTvHNQHN22XDqb0w2+ujaSoEn/JCHbtGb70tKRlB9SJ6HhVgg==
+
 webpack-virtual-modules@^0.6.2:
   version "0.6.2"
   resolved "https://registry.npmmirror.com/webpack-virtual-modules/-/webpack-virtual-modules-0.6.2.tgz"
